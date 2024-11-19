@@ -2458,7 +2458,7 @@ void controller_setup()
           strlcpy(lastPedalName, banks[currentBank][i].pedalName, MAXACTIONNAME+1);
         }
         DPRINT("   I2C");
-        for (byte a = 0; a < ADC_BOARDS; a++) ads1115Found[a] ? DPRINT(" %#04x", ADS1X15_ADDRESS + a) : DPRINT(" ----");
+        // for (byte a = 0; a < ADC_BOARDS; a++) ads1115Found[a] ? DPRINT(" %#04x", ADS1X15_ADDRESS + a) : DPRINT(" ----");
         break;
 
       case PED_ANALOG_PAD:

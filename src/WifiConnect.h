@@ -64,6 +64,7 @@ String translateEncryptionType(wifi_auth_mode_t encryptionType) {
 
 void set_wifi_power_saving_off()
 {
+  return;
   // Disable Modem-sleep entirely has much higher power consumption (from 80mA/108mA to 145mA),
   // but provides minimum latency for receiving Wi-Fi data in real time.
   // Disabling Modem-sleep entirely is not possible for Wi-Fi and Bluetooth coexist mode.
